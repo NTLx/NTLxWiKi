@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-02-28T07:49:06.697Z
+date: 2020-03-04T06:10:29.707Z
 tags: 
 ---
 
@@ -27,7 +27,7 @@ EOF
 mkdir -p ~/.pip/
 cat << EOF > ~/.pip/pip.conf
 [global]
-index-url = http://pypi.douban.com/simple/
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple/
 EOF
 
 sudo cp sources.list /etc/apt/sources.list
