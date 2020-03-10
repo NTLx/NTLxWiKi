@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-10T08:32:06.157Z
+date: 2020-03-10T08:33:15.479Z
 tags: 
 ---
 
@@ -58,7 +58,7 @@ POWERLEVEL9K_VCS_GIT_ICON='\uF408'
 POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uF408'
 EOF
 
-echo 'You can reboot your rpi to take effect, Good Luck!'
+echo 'You can now reboot your rpi to take effect, Good Luck!'
 ```
 
 ## Install Docker
