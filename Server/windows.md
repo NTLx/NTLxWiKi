@@ -2,7 +2,7 @@
 title: Windows
 description: Windows 部署记录
 published: true
-date: 2020-02-12T07:30:00.964Z
+date: 2020-03-17T02:32:36.498Z
 tags: 
 ---
 
@@ -159,3 +159,55 @@ Step 4. Activate the KMS client key.
 Finally, use the command ““slmgr /ato” to activate your Windows.
 
 ![](https://lx-public-pic.oss-cn-shanghai.aliyuncs.com/PicGo/20190929124038.png)
+
+# Active Microsoft Office
+
+## Office 2019
+
+Add a `*.bat` file, content with:
+
+```
+@echo off
+(cd /d "%~dp0")&&(NET FILE||(powershell start-process -FilePath '%0' -verb runas)&&(exit /B)) >NUL 2>&1
+title Office 2019 Activator r/Piracy
+echo Converting... & mode 40,25
+(if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\ProPlus2019VL*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)
+cscript //nologo ospp.vbs /unpkey:6MWKP >nul&cscript //nologo ospp.vbs /inpkey:NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP >nul&set i=1
+:server
+if %i%==1 set KMS_Sev=kms7.MSGuides.com
+if %i%==2 set KMS_Sev=kms8.MSGuides.com
+if %i%==3 set KMS_Sev=kms9.MSGuides.com
+cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul
+echo %KMS_Sev% & echo Activating...
+cscript //nologo ospp.vbs /act | find /i "successful" && (echo Complete) || (echo Trying another KMS Server & set /a i+=1 & goto server)
+pause >nul
+exit
+```
+
+Run this `*.bat` file using administrator, done.
+
+> Key: `W8W6K-3N7KK-PXB9H-8TD8W-BWTH9`（零售版）`N9J9Q-Q7MMP-XDDM6-63KKP-76FPM`（批量版）may still available.
+
+# Active Microsoft Visio
+
+## Visio 2019 Activation
+
+Add a `*.bat` file, content with:
+
+```
+@echo off
+title Activate Microsoft Visio 2019&cls&echo ============================================================================&echo #Visio: Activating Microsoft software products for FREE without software&echo ============================================================================&echo.&echo #Supported products:&echo - Microsoft Visio Standard 2019&echo - Microsoft Visio Professional Plus 2019&echo.&echo.&(if exist "%ProgramFiles%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles%\Microsoft Office\Office16")&(if exist "%ProgramFiles(x86)%\Microsoft Office\Office16\ospp.vbs" cd /d "%ProgramFiles(x86)%\Microsoft Office\Office16")&cscript //nologo ospp.vbs /inslic:"..\root\Licenses16\pkeyconfig-office.xrm-ms" >nul&(for /f %%x in ('dir /b ..\root\Licenses16\client-issuance*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\visioprovl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&(for /f %%x in ('dir /b ..\root\Licenses16\visiopro2019vl_kms*.xrm-ms') do cscript ospp.vbs /inslic:"..\root\Licenses16\%%x" >nul)&echo.&echo ============================================================================&echo 正在尝试激活...&cscript //nologo ospp.vbs /unpkey:7VCBB >nul&cscript //nologo ospp.vbs /inpkey:9BGNQ-K37YR-RQHF2-38RQ3-7VCBB >nul&set i=1
+:server
+if %i%==1 set KMS_Sev=kms8.MSGuides.com
+if %i%==2 set KMS_Sev=kms9.MSGuides.com
+if %i%==3 set KMS_Sev=kms7.MSGuides.com
+if %i%==4 goto notsupported
+cscript //nologo ospp.vbs /sethst:%KMS_Sev% >nul&echo ============================================================================&echo.&echo.
+cscript //nologo ospp.vbs /act | find /i "successful" && (echo 已完成，按任意键退出) || (echo 连接KMS服务器失败! 试图连接到另一个… & echo 请等待... & echo. & echo. & set /a i+=1 & goto server)
+pause >nul
+exit
+```
+
+Run this `*.bat` file using administrator, done.
+
+> Key: `YQGTJ-44NB6-KBYR3-388HG-KTQ4K` or `3BP7N-Y28TF-9YMM8-4JY2B-7MKH9` may still available.
