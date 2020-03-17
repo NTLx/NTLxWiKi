@@ -2,7 +2,7 @@
 title: Windows
 description: Windows 部署记录
 published: true
-date: 2020-03-17T02:34:46.075Z
+date: 2020-03-17T02:35:38.364Z
 tags: 
 ---
 
@@ -214,7 +214,9 @@ Run this `*.bat` file using administrator, done.
 
 # KMS Key Collection
 
-Microsoft Office 2019 Vol版Gvlk密钥(KMS激活专用) 产品秘钥
+## Microsoft Office 2019
+
+> Vol 版 Gvlk 密钥（KMS 激活专用）产品秘钥
 
 Office Professional Plus 2019：NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
 
