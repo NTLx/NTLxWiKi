@@ -2,7 +2,7 @@
 title: Windows
 description: Windows 部署记录
 published: true
-date: 2020-03-17T02:32:36.498Z
+date: 2020-03-17T02:34:46.075Z
 tags: 
 ---
 
@@ -211,3 +211,17 @@ exit
 Run this `*.bat` file using administrator, done.
 
 > Key: `YQGTJ-44NB6-KBYR3-388HG-KTQ4K` or `3BP7N-Y28TF-9YMM8-4JY2B-7MKH9` may still available.
+
+# KMS Key Collection
+
+Microsoft Office 2019 Vol版Gvlk密钥(KMS激活专用) 产品秘钥
+
+Office Professional Plus 2019：NMMKJ-6RK4F-KMJVX-8D9MJ-6MWKP
+
+Office Standard 2019：6NWWJ-YQWMR-QKGCB-6TMB3-9D9HK
+
+Project Professional 2019：B4NPR-3FKK7-T2MBV-FRQ4W-PKD2B
+
+Project Standard 2019：C4F7P-NCP8C-6CQPT-MQHV9-JXD2M
+
+Visio Professional 2019：9BGNQ-K37YR-RQHF2-38RQ3-7VCBB
