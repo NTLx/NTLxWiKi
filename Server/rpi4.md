@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-18T13:44:21.363Z
+date: 2020-03-18T13:44:50.719Z
 tags: 
 ---
 
@@ -145,7 +145,8 @@ sudo pacman-mirrors -c United_States -m rank
 sudo pacman -Syyu
 sudo pacman -S patch pkgconf fakeroot autoconf automake make cmake gcc clang vim yay wqy-microhei binutils nasm
 yay -S xrdp
-systemctl start xrdp.service
+sudo systemctl enable xrdp.service
+sudo systemctl start xrdp.service
 sudo pacman -S remmina
 # sudo pacman -S patch pkgconf fakeroot autoconf automake make cmake gcc clang vim yay wqy-microhei freerdp remmina
 # yay -S xrdp xorgxrdp remmina-plugin-rdesktop remmina
