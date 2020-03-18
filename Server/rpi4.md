@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-18T02:10:24.966Z
+date: 2020-03-18T02:12:25.922Z
 tags: 
 ---
 
@@ -113,13 +113,16 @@ sudo pacman-mirrors -c Denmark -m rank [-i]
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak
 sudo cp /etc/pacman.conf ~/
 sudo chmod 777 ~/pacman.conf
-cat << EOF > ~/pacman.conf
-XferCommand = /usr/bin/curl -x http://192.168.120.63:8888 -C - -f %u --output %o
-EOF
+
+# Add this to ~/pacman.conf :
+# XferCommand = /usr/bin/curl -x http://192.168.120.63:8888 -C - -f %u --output %o
+
 sudo cp ~/pacman.conf /etc/pacman.conf
+
 git config --global http.proxy http://192.168.120.63:8888
 git config --global https.proxy http://192.168.120.63:8888
 export http_proxy="http://192.168.120.63:8888"; export https_proxy="http://192.168.120.63:8888"; export ftp_proxy="http://192.168.120.63:8888"
+
 sudo pacman-mirrors -c United_States -m rank
 sudo pacman -Syyu
 sudo pacman -S patch pkgconf fakeroot autoconf automake make cmake gcc clang vim yay
