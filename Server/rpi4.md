@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-18T05:01:22.650Z
+date: 2020-03-18T05:21:28.097Z
 tags: 
 ---
 
@@ -146,6 +146,7 @@ sudo pacman -Syyu
 sudo pacman -S patch pkgconf fakeroot autoconf automake make cmake gcc clang vim yay wqy-microhei
 yay -S xrdp xorgxrdp
 libtool --finish /usr/lib/xrdp
+libtool --finish /usr/lib/xorg/modules/input
 ```
 
 # Windows For ARM
