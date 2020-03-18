@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-10T08:33:15.479Z
+date: 2020-03-18T00:15:53.087Z
 tags: 
 ---
 
@@ -105,6 +105,12 @@ sudo dd if=path/to/img_or_iso of=/dev/disk2 bs=4m;sync
 
 ```bash
 sudo pacman-mirrors -c Denmark -m rank [-i]
+```
+
+## Instalation Script
+
+```bash
+sudo pacman -S patch pkgconf fakeroot autoconf automake make cmake gcc clang vim
 ```
 
 # Windows For ARM
