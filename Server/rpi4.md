@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-18T02:04:14.397Z
+date: 2020-03-18T02:08:37.421Z
 tags: 
 ---
 
@@ -112,6 +112,7 @@ sudo pacman-mirrors -c Denmark -m rank [-i]
 ```bash
 sudo cp /etc/pacman.conf /etc/pacman.conf.bak
 sudo cp /etc/pacman.conf ~/
+sudo chmod 777 ~/pacman.conf
 cat << EOF > ~/pacman.conf
 XferCommand = /usr/bin/curl -x http://192.168.120.63:8888 -C - -f %u --output %o
 EOF
