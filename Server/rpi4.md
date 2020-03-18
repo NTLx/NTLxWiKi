@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-18T04:55:28.880Z
+date: 2020-03-18T05:01:22.650Z
 tags: 
 ---
 
@@ -144,7 +144,7 @@ export http_proxy="http://192.168.120.63:8888"; export https_proxy="http://192.1
 sudo pacman-mirrors -c United_States -m rank
 sudo pacman -Syyu
 sudo pacman -S patch pkgconf fakeroot autoconf automake make cmake gcc clang vim yay wqy-microhei
-yay -S xrdp
+yay -S xrdp xorgxrdp
 libtool --finish /usr/lib/xrdp
 ```
 
