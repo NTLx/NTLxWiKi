@@ -2,7 +2,7 @@
 title: Windows
 description: Windows 部署记录
 published: true
-date: 2020-03-17T02:35:38.364Z
+date: 2020-03-26T06:27:06.122Z
 tags: 
 ---
 
@@ -13,6 +13,24 @@ tags:
 <!-- more -->
 
 According [How to activate Windows Server without product key](https://freeproductkeys.com/how-to-activate-windows-server-without-product-key/).
+
+## Auto Activate Script
+
+### Windows 10 Pro
+
+```bash
+slmgr /ipk W269N-WFGWX-YVC9B-4J6C9-T83GX
+slmgr /skms kms8.msguides.com
+slmgr /ato
+```
+
+### Windows 10 Enterprise
+
+```bash
+slmgr /ipk NPPR9-FWDCX-D2C8J-H872K-2YT43
+slmgr /skms kms8.msguides.com
+slmgr /ato
+```
 
 ## Manually installing KMS client key to activate Windows
 
