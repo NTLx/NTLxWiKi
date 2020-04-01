@@ -2,7 +2,7 @@
 title: Mac OS
 description: 
 published: true
-date: 2020-04-01T04:56:44.469Z
+date: 2020-04-01T04:56:46.528Z
 tags: 
 ---
 

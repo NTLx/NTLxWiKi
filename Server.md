@@ -2,8 +2,8 @@
 title: Server
 description: 各种系统的安装、部署记录
 published: true
-date: 2020-04-01T00:36:54.554Z
-tags: 目录, index
+date: 2020-04-01T00:51:25.565Z
+tags: 
 ---
 
 - [UNRAID](/Server/UNRAID)
