@@ -2,7 +2,7 @@
 title: Mac OS
 description: 
 published: true
-date: 2020-04-01T03:11:13.748Z
+date: 2020-04-01T03:14:59.860Z
 tags: 
 ---
 
@@ -17,5 +17,6 @@ sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
+echo 'ZSH_THEME="powerlevel10k/powerlevel10k"' >> ~/.zshrc
 p10k configure
 ```
