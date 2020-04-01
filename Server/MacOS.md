@@ -2,7 +2,7 @@
 title: Mac OS
 description: 
 published: true
-date: 2020-04-01T00:51:23.652Z
+date: 2020-04-01T00:51:52.589Z
 tags: 
 ---
 
@@ -40,7 +40,7 @@ EOF
 
 source ~/.zshrc
 chmod go-w '/usr/local/share'
-rm -f ~/.zcompdump; compinit
+# rm -f ~/.zcompdump; compinit
 
 # theme
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ~/powerlevel10k
