@@ -2,7 +2,7 @@
 title: Mac OS
 description: 
 published: true
-date: 2020-04-01T00:51:52.589Z
+date: 2020-04-01T02:46:35.644Z
 tags: 
 ---
 
@@ -10,6 +10,7 @@ tags:
 
 ```bash
 brew install zsh zsh-autosuggestions zsh-completions zsh-git-prompt zsh-history-substring-search zsh-lovers zsh-navigation-tools zsh-syntax-highlighting
+git clone git://github.com/zsh-users/zsh-completions.git ~/zsh-completions
 
 cat << EOF >> ~/.zshrc
 
@@ -30,11 +31,7 @@ export ZSH_HIGHLIGHT_HIGHLIGHTERS_DIR=/usr/local/share/zsh-syntax-highlighting/h
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 # zsh-completions
-if type brew &>/dev/null; then
-  FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
-  autoload -Uz compinit
-  compinit
-fi
+fpath=(~/zsh-completions/src $fpath)
 
 EOF
 
