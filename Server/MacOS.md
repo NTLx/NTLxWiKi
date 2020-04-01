@@ -2,14 +2,15 @@
 title: Mac OS
 description: 
 published: true
-date: 2020-04-01T02:46:35.644Z
+date: 2020-04-01T02:46:56.924Z
 tags: 
 ---
 
 # Zsh
 
 ```bash
-brew install zsh zsh-autosuggestions zsh-completions zsh-git-prompt zsh-history-substring-search zsh-lovers zsh-navigation-tools zsh-syntax-highlighting
+brew install zsh zsh-autosuggestions zsh-git-prompt zsh-history-substring-search zsh-lovers zsh-navigation-tools zsh-syntax-highlighting
+
 git clone git://github.com/zsh-users/zsh-completions.git ~/zsh-completions
 
 cat << EOF >> ~/.zshrc
