@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-03-18T13:44:51.737Z
+date: 2020-04-08T05:54:43.173Z
 tags: 
 ---
 
@@ -78,6 +78,16 @@ sudo systemctl start docker
 # sudo systemctl restart docker
 sudo docker version
 ```
+
+## Raspbian Buster Lite
+
+Turn on SSH:
+
+`sudo raspi-config`, choose `5 Interface Options`, then choose `SSH` to enable.
+
+Connect WiFi:
+
+`sudo raspi-config`, choose `2 Network Options`, then choose `N2 Wi-fi` and enter SSID & password to connect.
 
 # Manjaro For ARM
 
