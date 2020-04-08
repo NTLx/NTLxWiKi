@@ -2,7 +2,7 @@
 title: Settings
 description: All kinds of settings
 published: true
-date: 2020-04-01T07:09:49.310Z
+date: 2020-04-08T14:22:49.153Z
 tags: 
 ---
 
@@ -12,8 +12,8 @@ tags:
 - [Bash](/Settings/Bash)
 - [Zsh](/Settings/Zsh)
 - [Tmux](/Settings/Tmux)
-- [华丽 Vim 配置](/Settings/VimConf)
-- [最小 Vim 配置](/Settings/VimSet)
+- [Awesome Vim Settings](/Settings/VimConf)
+- [Defalut Vim Settings](/Settings/VimSet)
 - [Command Line Tips](/Settings/CLI)
 - [Privoxy Configure](/Settings/PrivoxyConf)
 
