@@ -1,8 +1,8 @@
 ---
 title: Zsh
-description: Default settings within popular OSs
+description: Settings for zsh
 published: true
-date: 2020-04-08T14:28:17.099Z
+date: 2020-04-08T14:29:03.699Z
 tags: 
 ---
 
