@@ -2,7 +2,7 @@
 title: Zsh
 description: Settings for zsh
 published: true
-date: 2020-04-08T14:30:34.280Z
+date: 2020-04-08T14:30:58.836Z
 tags: 
 ---
 
@@ -10,13 +10,13 @@ tags:
 
 # Configure & Settings
 
-```
+```bash
 sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
 cd ~/.oh-my-zsh/custom/plugins
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
 cd ~/.oh-my-zsh/custom/themes
 git clone https://github.com/romkatv/powerlevel10k.git
-# You should change ZSH_THEME manually by here
+# You should change ZSH_THEME manually by now
 #echo "ZSH_THEME=powerlevel10k/powerlevel10k" >> ~/.zshrc
 p10k configure
 ```
