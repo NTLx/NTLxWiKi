@@ -2,13 +2,27 @@
 title: Zsh
 description: Default settings within popular OSs
 published: true
-date: 2020-04-01T07:09:43.608Z
+date: 2020-04-08T14:28:17.099Z
 tags: 
 ---
 
 ![](https://upload.wikimedia.org/wikipedia/commons/1/1f/Zsh-agnoster.png?1574734349248)
 
-# Manjaro Architect
+# Configure & Settings
+
+```
+sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+cd ~/.oh-my-zsh/custom/plugins
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+cd ~/.oh-my-zsh/custom/themes
+git clone https://github.com/romkatv/powerlevel10k.git
+echo "ZSH_THEME=powerlevel10k/powerlevel10k" >> ~/.zshrc
+p10k configure
+```
+
+# Default Settings within Popular OSs
+
+## Manjaro Architect
 
 `/etc/zsh/zprofile`
 
