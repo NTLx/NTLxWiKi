@@ -2,7 +2,7 @@
 title: Arch Linux
 description: Arch Linux 部署记录
 published: true
-date: 2020-02-12T07:32:04.237Z
+date: 2020-04-01T07:09:21.804Z
 tags: 
 ---
 

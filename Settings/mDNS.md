@@ -2,7 +2,7 @@
 title: mDNS
 description: 各种系统中 mDNS 的安装与配置
 published: true
-date: 2020-02-17T03:08:50.295Z
+date: 2020-04-01T07:09:46.010Z
 tags: 
 ---
 

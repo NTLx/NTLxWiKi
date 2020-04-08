@@ -2,7 +2,7 @@
 title: Vim
 description: Minimal VIM Configure
 published: true
-date: 2020-02-12T07:51:01.093Z
+date: 2020-04-01T07:09:42.379Z
 tags: 
 ---
 

@@ -2,7 +2,7 @@
 title: ESXi
 description: ESXi部署记录
 published: true
-date: 2020-02-12T07:15:44.366Z
+date: 2020-04-01T07:09:30.366Z
 tags: 
 ---
 

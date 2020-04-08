@@ -2,7 +2,7 @@
 title: Bash
 description: Default Settings in popular OSs
 published: true
-date: 2020-02-12T07:46:09.171Z
+date: 2020-04-01T07:09:33.240Z
 tags: 
 ---
 

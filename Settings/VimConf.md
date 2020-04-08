@@ -2,7 +2,7 @@
 title: 华丽 Vim 配置
 description: 
 published: true
-date: 2020-02-12T07:49:53.940Z
+date: 2020-04-01T07:09:41.122Z
 tags: 
 ---
 

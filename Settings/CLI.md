@@ -2,7 +2,7 @@
 title: CLI
 description: Recording usefull CLI tips
 published: true
-date: 2020-02-12T07:53:04.407Z
+date: 2020-04-01T07:09:34.439Z
 tags: 
 ---
 

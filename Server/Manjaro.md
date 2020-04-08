@@ -2,7 +2,7 @@
 title: Manjaro
 description: Manjaro 部署记录
 published: true
-date: 2020-02-28T08:35:05.104Z
+date: 2020-04-01T07:09:27.824Z
 tags: 
 ---
 

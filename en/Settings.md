@@ -2,7 +2,7 @@
 title: Settings
 description: All kinds of settings
 published: true
-date: 2020-02-27T01:44:02.627Z
+date: 2020-04-01T07:09:49.310Z
 tags: 
 ---
 

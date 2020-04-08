@@ -2,7 +2,7 @@
 title: Tmux
 description: TMUX Configurations
 published: true
-date: 2020-02-12T07:48:58.848Z
+date: 2020-04-01T07:09:39.849Z
 tags: 
 ---
 

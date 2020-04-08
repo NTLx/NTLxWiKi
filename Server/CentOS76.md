@@ -2,7 +2,7 @@
 title: CentOS 7.6
 description: CentOS 7.6 部署记录
 published: true
-date: 2020-02-12T07:55:09.759Z
+date: 2020-04-01T07:09:41.634Z
 tags: 
 ---
 

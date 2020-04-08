@@ -2,7 +2,7 @@
 title: Zsh
 description: Default settings within popular OSs
 published: true
-date: 2020-02-12T07:47:20.747Z
+date: 2020-04-01T07:09:43.608Z
 tags: 
 ---
 

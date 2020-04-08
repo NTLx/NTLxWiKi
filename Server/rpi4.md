@@ -2,11 +2,15 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-08T05:54:43.173Z
+date: 2020-04-08T13:54:09.665Z
 tags: 
 ---
 
 ![](https://lx-public-pic.oss-cn-shanghai.aliyuncs.com/PicGo/20191205103453.gif)
+
+# k3s
+
+[Five years of Raspberry Pi Clusters](https://medium.com/@alexellisuk/five-years-of-raspberry-pi-clusters-77e56e547875)
 
 # Official (based on Debian)
 
@@ -36,27 +40,28 @@ sudo cp raspi.list /etc/apt/sources.list.d/raspi.list
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y vim htop ncdu tmux bash-completion zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k remmina remmina-common remmina-dev remmina-plugin-rdp remmina-plugin-vnc fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
+sudo apt install -y vim htop ncdu tmux bash-completion
 
-cat << EOF > ~/.zshrc
-source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
-source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+# sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k remmina remmina-common remmina-dev remmina-plugin-rdp remmina-plugin-vnc fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
+# cat << EOF > ~/.zshrc
+# source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
+# source /usr/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# source /usr/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
-export TERM="xterm-256color"
+# export TERM="xterm-256color"
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir_writable dir vcs)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs time disk_usage ram load)
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-POWERLEVEL9K_USER_ICON="\uF415" # <U+F415>
-POWERLEVEL9K_ROOT_ICON="\uF09C"
-POWERLEVEL9K_SUDO_ICON=$'\uF09C' # <U+F09C>
-POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
-POWERLEVEL9K_VCS_GIT_ICON='\uF408'
-POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uF408'
-EOF
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(os_icon user dir_writable dir vcs)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status command_execution_time root_indicator background_jobs time disk_usage ram load)
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX="%(?:%{$fg_bold[green]%}➜ :%{$fg_bold[red]%}➜ )"
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+# POWERLEVEL9K_USER_ICON="\uF415" # <U+F415>
+# POWERLEVEL9K_ROOT_ICON="\uF09C"
+# POWERLEVEL9K_SUDO_ICON=$'\uF09C' # <U+F09C>
+# POWERLEVEL9K_TIME_FORMAT="%D{%H:%M}"
+# POWERLEVEL9K_VCS_GIT_ICON='\uF408'
+# POWERLEVEL9K_VCS_GIT_GITHUB_ICON='\uF408'
+# EOF
 
 echo 'You can now reboot your rpi to take effect, Good Luck!'
 ```
@@ -164,7 +169,7 @@ sudo pacman -S remmina
 # libtool --finish /usr/lib/xorg/modules/input
 ```
 
-# Windows For ARM
+# Windows IoT For ARM
 
 ## Download system
 

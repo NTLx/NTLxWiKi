@@ -2,7 +2,7 @@
 title: CentOS 8
 description: CentOS 8 部署记录
 published: true
-date: 2020-02-12T07:19:40.654Z
+date: 2020-04-01T07:09:25.738Z
 tags: 
 ---
 

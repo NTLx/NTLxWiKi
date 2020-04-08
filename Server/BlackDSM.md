@@ -2,7 +2,7 @@
 title: Black DSM
 description: 黑群晖部署记录
 published: true
-date: 2020-02-12T07:31:22.800Z
+date: 2020-04-01T07:09:22.985Z
 tags: 
 ---
 
