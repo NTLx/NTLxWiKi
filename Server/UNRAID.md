@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-09T07:01:20.022Z
+date: 2020-04-09T08:41:26.847Z
 tags: 
 ---
 
@@ -67,6 +67,19 @@ docker run -d --name='FileBrowser' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_
 
 ```bash
 docker run -d --name='Aria2WebUI' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '6800:6800/tcp' -p '6880:6880/tcp' -p '6800:6800/udp' -p '6880:6880/udp' -v '/mnt/disk1/appdata/Aria2WebUI':'/conf':'rw' -v '/mnt/disk1/Download':'/data':'rw' 'xujinkai/aria2-with-webui'
+```
+
+### Build Aria2WebUI
+
+```bash
+docker run -it -d alpine:latest
+docker ps -a
+docker exec -it $ID /bin/sh
+apk add aria2 git
+git clone https://github.com/ziahamza/webui-aria2.git
+aria2c --enable-rpc --rpc-listen-all
+cd webui-aria2
+node node-server.js
 ```
 
 ## rrshare
