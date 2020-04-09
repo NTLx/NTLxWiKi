@@ -1,15 +1,15 @@
 ---
-title: 主页
-description: 
+title: HOME
+description: Home Page of NTLx's WiKi
 published: true
-date: 2020-04-01T07:09:19.199Z
+date: 2020-04-09T07:19:09.594Z
 tags: 
 ---
 
-# 欢迎
+# Welcome!
 
-欢迎来到我的 WiKi！
+Welcome to my WiKi!
 
-# 常用链接
+# Usefull Links
 
-[V2Ray 一站式解决方案](https://github.com/NTLx/scripts)
+[V2Ray Auto Deploy Selution](https://github.com/NTLx/scripts)
