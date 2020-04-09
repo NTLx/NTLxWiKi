@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-09T05:43:14.147Z
+date: 2020-04-09T06:14:31.718Z
 tags: 
 ---
 
@@ -82,6 +82,14 @@ sudo systemctl daemon-reload
 sudo systemctl start docker
 # sudo systemctl restart docker
 sudo docker version
+```
+
+## Install Docker Compose
+
+```bash
+sudo apt install -y libssl-dev libffi-dev
+sudo apt install -y python3-pip
+pip3 install docker-compose
 ```
 
 ## Raspbian Buster Lite
