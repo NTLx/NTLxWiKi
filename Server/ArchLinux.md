@@ -1,8 +1,8 @@
 ---
 title: Arch Linux
-description: Arch Linux 部署记录
+description: Arch Linux Deployment
 published: true
-date: 2020-04-01T07:09:21.804Z
+date: 2020-04-09T07:01:49.623Z
 tags: 
 ---
 
