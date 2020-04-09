@@ -1,8 +1,8 @@
 ---
 title: mDNS
-description: 各种系统中 mDNS 的安装与配置
+description: mDNS settings in OSs
 published: true
-date: 2020-04-01T07:09:46.010Z
+date: 2020-04-09T07:18:05.782Z
 tags: 
 ---
 
