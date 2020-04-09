@@ -1,8 +1,8 @@
 ---
 title: CentOS 8
-description: CentOS 8 部署记录
+description: CentOS 8 Deployment
 published: true
-date: 2020-04-01T07:09:25.738Z
+date: 2020-04-09T07:09:17.690Z
 tags: 
 ---
 
@@ -142,7 +142,7 @@ sudo systemctl restart smb
 sudo systemctl restart nmb
 ```
 
-> 正常使用 Samba 服务必须设置好 SELinux，一般~~简单粗暴的~~直接关闭，但其实设置好更能保证安全性，可参考[这里](https://linuxconfig.org/install-samba-on-redhat-8#h7-setup-selinux-for-samba)进行设置。
+> SELinux must be configured correctly for Samba using (usually just trun it off, not recommended), could visit [here](https://linuxconfig.org/install-samba-on-redhat-8#h7-setup-selinux-for-samba) for more instructions.
 
 ## minimal config
 
@@ -192,24 +192,24 @@ sudo mount /dev/sda1 /store
 ## sync time
 
 ```bash
-sudo systemctl enable chronyd                  # 设置开机启动
-sudo systemctl is-enabled chronyd              # 查看是否设置了开机启动
-sudo systemctl start chronyd                   # 开启 chrony
-sudo timedatectl list-timezones                # 列出所有时区
-sudo timedatectl set-local-rtc 1               # 将硬件时钟调整为与本地时钟一致，0 即设置为 UTC 时间
-sudo timedatectl set-timezone Asia/Shanghai    # 设置系统时区为上海
-sudo timedatectl set-ntp yes                   # 设置开启自动同步
+sudo systemctl enable chronyd                  # set startup on boot
+sudo systemctl is-enabled chronyd              # check startup on boot
+sudo systemctl start chronyd                   # enable chrony
+sudo timedatectl list-timezones                # list all timezones
+sudo timedatectl set-local-rtc 1               # 0 means UTC
+sudo timedatectl set-timezone Asia/Shanghai    # set timezone to Shanghai
+sudo timedatectl set-ntp yes                   # enable time sync
 ```
 
 ## about SELinux
 
 ```bash
-getenforce                      # 查看运行状态，如果显示 Enforcing，说明是开启状态
-sudo setenforce 0               # 临时禁用 SELinux
-sudo vim /etc/selinux/config    # 编辑配置文件，永久禁用 SELinux
+getenforce                      # check run status, Enforcing means on
+sudo setenforce 0               # disable SELinux temproraily
+sudo vim /etc/selinux/config    # disable SELinux forever
 ```
 
-将 SELINUX=enforcing 修改为 SELINUX=disabled 即可：
+Edit `SELINUX=enforcing` to `SELINUX=disabled` :
 
 ```conf
 # This file controls the state of SELinux on the system.
