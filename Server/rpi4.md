@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-09T00:29:02.327Z
+date: 2020-04-09T05:43:14.147Z
 tags: 
 ---
 
@@ -85,6 +85,9 @@ sudo docker version
 ```
 
 ## Raspbian Buster Lite
+
+Default user: pi
+Default user password: raspberry
 
 Turn on SSH:
 
