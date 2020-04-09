@@ -1,8 +1,8 @@
 ---
 title: Windows
-description: Windows 部署记录
+description: Windows Deployment
 published: true
-date: 2020-04-01T07:09:32.459Z
+date: 2020-04-09T07:15:51.615Z
 tags: 
 ---
 
