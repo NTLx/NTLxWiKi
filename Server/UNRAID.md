@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-09T08:52:27.171Z
+date: 2020-04-09T08:55:55.716Z
 tags: 
 ---
 
@@ -79,6 +79,8 @@ apk add aria2 git nodejs
 git clone https://github.com/ziahamza/webui-aria2.git
 exit
 docker commit -m="Aria2WebUI Basic Image" -a='NTLx' 68b9f57b0d29 aria2webui:0.1
+docker run -d --name "Aria2WebUI" -p 6800:6800 -p 8888:8888 -v /home/pi/Download:/home aria2webui:0.1
+
 #aria2c --enable-rpc --rpc-listen-all
 #cd webui-aria2
 #node node-server.js
