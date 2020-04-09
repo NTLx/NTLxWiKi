@@ -1,8 +1,8 @@
 ---
 title: ESXi
-description: ESXi部署记录
+description: ESXi Deployment
 published: true
-date: 2020-04-01T07:09:30.366Z
+date: 2020-04-09T07:02:15.234Z
 tags: 
 ---
 
