@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-09T00:26:46.383Z
+date: 2020-04-09T00:29:02.327Z
 tags: 
 ---
 
@@ -40,7 +40,7 @@ sudo cp raspi.list /etc/apt/sources.list.d/raspi.list
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y vim htop ncdu tmux bash-completion
+sudo apt install -y git vim htop ncdu tmux bash-completion
 
 # sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k remmina remmina-common remmina-dev remmina-plugin-rdp remmina-plugin-vnc fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
 # cat << EOF > ~/.zshrc
