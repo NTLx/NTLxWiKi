@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-09T08:55:55.716Z
+date: 2020-04-10T00:31:31.945Z
 tags: 
 ---
 
@@ -72,9 +72,8 @@ docker run -d --name='Aria2WebUI' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_O
 ### Build Aria2WebUI
 
 ```bash
-docker run -it -d alpine
-docker ps -a
-docker exec -it $ID /bin/sh
+docker run -it alpine
+apk update
 apk add aria2 git nodejs
 git clone https://github.com/ziahamza/webui-aria2.git
 exit
