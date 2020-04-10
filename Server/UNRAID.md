@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-10T00:31:31.945Z
+date: 2020-04-10T05:22:57.387Z
 tags: 
 ---
 
@@ -59,6 +59,12 @@ The Docker GUI in UNRAID was recommanded, but the Command Line was also convenie
 
 ```bash
 docker run -d --name='FileBrowser' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'WEB_PORT'='10080' -p '10080:10080/tcp' -v '/mnt/disk1/appdata/FileBrowser':'/config':'rw' -v '/mnt':'/myfiles':'rw' '80x86/filebrowser'
+```
+
+## Aria2 & NG
+
+```bash
+docker run -d --name='aria2' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '6800:6800/tcp' -p '6800:6800/udp' -p '8888:80/tcp' -p '8888:80/udp' -v '/mnt/disk1/Download':'/data':'rw' 'wjg1101766085/aira2-ng:0.0.1'
 ```
 
 ## Aria2 & WebUI
