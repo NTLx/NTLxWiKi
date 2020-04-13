@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T02:27:50.614Z
+date: 2020-04-13T02:31:40.216Z
 tags: 
 ---
 
@@ -41,6 +41,53 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y git vim htop ncdu tmux bash-completion
+
+cat << EOF >> ~/.bashrc
+tablook () {
+    column -s $'\t' -t "$1" | less -S
+}
+
+alias les="less -SN"
+
+alias ..='cd ..'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias .....='cd ../../../../'
+alias ......='cd ../../../../../'
+
+# as suggested by Mendel Cooper in "Advanced Bash Scripting Guide"
+extract () {
+   if [ -f $1 ] ; then
+       case $1 in
+        *.tar.bz2)      tar xvjf $1 ;;
+        *.tar.gz)       tar xvzf $1 ;;
+        *.tar.xz)       tar Jxvf $1 ;;
+        *.bz2)          bunzip2 $1 ;;
+        *.rar)          unrar x $1 ;;
+        *.gz)           gunzip $1 ;;
+        *.tar)          tar xvf $1 ;;
+        *.tbz2)         tar xvjf $1 ;;
+        *.tgz)          tar xvzf $1 ;;
+        *.zip)          unzip $1 ;;
+        *.Z)            uncompress $1 ;;
+        *.7z)           7z x $1 ;;
+        *)              echo "don't know how to extract '$1'..." ;;
+       esac
+   else
+       echo "'$1' is not a valid file!"
+   fi
+}
+
+# Use mcd to create a directory and cd to it simultaneously:
+function mcd { mkdir -p "$1" && cd "$1";}
+
+# Make grep pretty:
+alias grep="grep --color=auto"
+
+# Show your $PATH in a prettier format:
+alias showpath='echo $PATH | tr ":" "\n" | nl'
+
+EOF
 
 git config --global user.name "NTLx"
 git config --global user.email "lx3325360@gmail.com"
