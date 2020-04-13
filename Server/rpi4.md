@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:05:33.795Z
+date: 2020-04-13T03:06:25.273Z
 tags: 
 ---
 
@@ -44,7 +44,7 @@ sudo cp raspi.list /etc/apt/sources.list.d/raspi.list
 sudo apt update
 sudo apt upgrade -y
 
-sudo apt install -y git vim htop ncdu tmux bash-completion expect
+sudo apt install -y git vim htop ncdu tmux bash-completion tcl expect
 
 cat << EOF >> ~/.bashrc
 
