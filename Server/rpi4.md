@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:06:25.273Z
+date: 2020-04-13T03:07:48.018Z
 tags: 
 ---
 
@@ -12,7 +12,9 @@ tags:
 
 [Five years of Raspberry Pi Clusters](https://medium.com/@alexellisuk/five-years-of-raspberry-pi-clusters-77e56e547875)
 
-# Official (based on Debian)
+# Initial configure
+
+> For Official OS: Raspbian Buster (based on Debian)
 
 Add blow content to a file, such as `~/init.sh`, then just run it like this `./init.sh`.
 
