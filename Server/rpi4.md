@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-09T06:14:31.718Z
+date: 2020-04-13T02:09:21.111Z
 tags: 
 ---
 
@@ -191,3 +191,13 @@ Go to [UUP dump](https://uupdump.ml/), choose a system version (arm64), and choo
 First, download [WOA](https://github.com/WOA-Project/WOA-Deployer-Rpi).
 
 Then, open system file (`*.iso`), and choose `source/install.wim` as source for deploying.
+
+# Software
+
+## Aria2 & NG
+
+```bash
+git clone git@github.com:NTLx/aira2-ng.git
+docker build -t aira2webui-ng aira2-ng
+docker run -d --name='aria2' -p '6800:6800/tcp' -p '6800:6800/udp' -p '8888:80/tcp' -p '8888:80/udp' -v '/home/pi/Download':'/data':'rw' -v '/home/pi/aria2_conf':'/config':'rw' aira2webui-ng
+```
