@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:10:17.241Z
+date: 2020-04-13T03:12:03.376Z
 tags: 
 ---
 
@@ -16,7 +16,7 @@ tags:
 
 > For Official OS: Raspbian Buster (based on Debian)
 
-Add blow content to a file, such as `~/init.sh`, then just run it like this `./init.sh`.
+Add blow content to a file, such as `~/init.sh`, then just run it like this `~/init.sh`.
 
 ```bash
 #!/usr/bin/expect -f
