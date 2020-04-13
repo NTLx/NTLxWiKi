@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:17:47.254Z
+date: 2020-04-13T03:21:29.077Z
 tags: 
 ---
 
@@ -47,6 +47,7 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y git vim htop ncdu tmux bash-completion tcl expect
+sudo apt install -y p7zip-full libio-compress-perl unrar-free unzip ncompress libperlio-gzip-perl
 
 cat << EOF >> ~/.bashrc
 
@@ -110,7 +111,6 @@ expect "*again*"
 send "\n"
 expect eof
 
-# sudo apt install -y p7zip-full ncompress libio-compress-perl unrar-free libperlio-gzip-perl unzip
 # sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k remmina remmina-common remmina-dev remmina-plugin-rdp remmina-plugin-vnc fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
 # cat << EOF > ~/.zshrc
 # source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
