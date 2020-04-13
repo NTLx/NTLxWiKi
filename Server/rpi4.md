@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T02:19:59.535Z
+date: 2020-04-13T02:23:33.228Z
 tags: 
 ---
 
@@ -44,11 +44,7 @@ sudo apt install -y git vim htop ncdu tmux bash-completion
 
 git config --global user.name "NTLx"
 git config --global user.email "lx3325360@gmail.com"
-ssh-keygen -t rsa -b 4096 -C "lx3325360@gmail.com" << EOF
-
-
-
-EOF
+ssh-keygen -t rsa -b 4096 -C "lx3325360@gmail.com"
 
 # sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k remmina remmina-common remmina-dev remmina-plugin-rdp remmina-plugin-vnc fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
 # cat << EOF > ~/.zshrc
