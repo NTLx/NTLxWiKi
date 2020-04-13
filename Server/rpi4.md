@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:12:03.376Z
+date: 2020-04-13T03:17:47.254Z
 tags: 
 ---
 
@@ -110,6 +110,7 @@ expect "*again*"
 send "\n"
 expect eof
 
+# sudo apt install -y p7zip-full ncompress libio-compress-perl unrar-free libperlio-gzip-perl unzip
 # sudo apt install -y zsh zsh-autosuggestions zsh-syntax-highlighting zsh-theme-powerlevel9k remmina remmina-common remmina-dev remmina-plugin-rdp remmina-plugin-vnc fcitx fcitx-googlepinyin fcitx-module-cloudpinyin fcitx-sunpinyin
 # cat << EOF > ~/.zshrc
 # source /usr/share/powerlevel9k/powerlevel9k.zsh-theme
