@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:07:48.018Z
+date: 2020-04-13T03:10:07.219Z
 tags: 
 ---
 
@@ -165,8 +165,11 @@ pip3 install docker-compose
 
 ## Raspbian Buster Lite
 
-Default user: pi
-Default user password: raspberry
+## Additional Settings
+
+> Especially for Raspbian Buster Lite
+> - Default user: pi
+> - Default user password: raspberry
 
 Turn on SSH:
 
