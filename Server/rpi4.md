@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T03:21:29.077Z
+date: 2020-04-13T03:22:21.110Z
 tags: 
 ---
 
@@ -47,7 +47,7 @@ sudo apt update
 sudo apt upgrade -y
 
 sudo apt install -y git vim htop ncdu tmux bash-completion tcl expect
-sudo apt install -y p7zip-full libio-compress-perl unrar-free unzip ncompress libperlio-gzip-perl
+sudo apt install -y p7zip-full libio-compress-perl unrar-free unzip ncompress libperlio-gzip-perl bzip2
 
 cat << EOF >> ~/.bashrc
 
