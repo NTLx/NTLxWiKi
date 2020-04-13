@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T02:59:50.905Z
+date: 2020-04-13T03:05:33.795Z
 tags: 
 ---
 
@@ -13,6 +13,8 @@ tags:
 [Five years of Raspberry Pi Clusters](https://medium.com/@alexellisuk/five-years-of-raspberry-pi-clusters-77e56e547875)
 
 # Official (based on Debian)
+
+Add blow content to a file, such as `~/init.sh`, then just run it like this `./init.sh`.
 
 ```bash
 #!/usr/bin/expect -f
@@ -96,7 +98,6 @@ source ~/.bashrc
 
 git config --global user.name "NTLx"
 git config --global user.email "lx3325360@gmail.com"
-#ssh-keygen -t rsa -b 4096 -C "lx3325360@gmail.com"
 
 spawn ssh-keygen -t rsa -b 4096 -C "lx3325360@gmail.com"
 expect "*home*"
