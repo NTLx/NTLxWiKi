@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T05:12:02.645Z
+date: 2020-04-13T07:09:43.719Z
 tags: 
 ---
 
@@ -164,8 +164,6 @@ sudo apt install -y python3-pip
 pip3 install docker-compose
 ```
 
-## Raspbian Buster Lite
-
 ## Additional Settings
 
 > Especially for Raspbian Buster Lite
@@ -179,6 +177,19 @@ Turn on SSH:
 Connect WiFi:
 
 `sudo raspi-config`, choose `2 Network Options`, then choose `N2 Wi-fi` and enter SSID & password to connect.
+
+## CPU Temprature
+
+Could just write a perl script to check, like `CPU.pl`:
+
+```perl
+#!/usr/bin/perl
+while(1) {
+    print `cat /sys/class/thermal/thermal_zone0/temp`/1000;
+    print "\n";
+    <STDIN>;
+}
+```
 
 # Manjaro For ARM
 
