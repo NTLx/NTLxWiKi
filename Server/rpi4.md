@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T02:54:55.139Z
+date: 2020-04-13T02:59:50.905Z
 tags: 
 ---
 
@@ -15,6 +15,8 @@ tags:
 # Official (based on Debian)
 
 ```bash
+#!/usr/bin/expect -f
+
 sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
 sudo cp /etc/apt/sources.list.d/raspi.list /etc/apt/sources.list.d/raspi.list.bak
 
