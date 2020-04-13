@@ -2,7 +2,7 @@
 title: Raspberry Pi 4
 description: Raspberry Pi 4 部署说明
 published: true
-date: 2020-04-13T02:23:33.228Z
+date: 2020-04-13T02:27:50.614Z
 tags: 
 ---
 
@@ -85,7 +85,10 @@ sudo systemctl enable docker
 sudo systemctl daemon-reload
 sudo systemctl start docker
 # sudo systemctl restart docker
-sudo docker version
+sudo groupadd docker
+sudo gpasswd -a $USER docker
+newgrp docker
+docker version
 ```
 
 ## Install Docker Compose
