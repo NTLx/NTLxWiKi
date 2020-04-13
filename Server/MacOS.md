@@ -2,9 +2,15 @@
 title: Mac OS
 description: 
 published: true
-date: 2020-04-01T07:09:26.961Z
+date: 2020-04-13T07:45:03.790Z
 tags: 
 ---
+
+# General Settings in Terminal
+
+```bash
+alias his="history | awk '{CMD[\$2]++;count++;}END{for (a in CMD)print CMD[a]\" \"CMD[a]/count*100\"% \"a;}' | grep -v \"./\" | column -c3 -s \" \" -t | sort -nr | nl | head -n10"
+```
 
 # ZSH
 
