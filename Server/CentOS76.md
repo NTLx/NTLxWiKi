@@ -2,7 +2,7 @@
 title: CentOS 7.6
 description: CentOS 7.6 Deployment
 published: true
-date: 2020-04-09T07:10:09.891Z
+date: 2020-04-14T07:28:54.458Z
 tags: 
 ---
 
@@ -678,6 +678,7 @@ cpan -i Module::Build
 cpan -i JSON
 cpan -i Getopt::Long
 cpan -i Parallel::ForkManager
+cpan -i Statistics::Descriptive
 cpan -i YAML::Any
 cpan -i Date::Manip
 cpan -i Math::BigFloat
@@ -698,6 +699,7 @@ cpanm -n Module::Build
 cpanm -n JSON
 cpanm -n Getopt::Long
 cpanm -n Parallel::ForkManager
+cpanm -n Statistics::Descriptive
 cpanm -n YAML::Any
 cpanm -n Date::Manip
 cpanm -n Math::BigFloat
