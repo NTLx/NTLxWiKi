@@ -1,8 +1,8 @@
 ---
 title: Time Management
-description: Time Management Instaread Original
+description: Copy From `Instaread Original`
 published: true
-date: 2020-04-14T14:28:29.164Z
+date: 2020-04-14T14:29:05.964Z
 tags: 
 ---
 
