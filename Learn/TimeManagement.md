@@ -2,11 +2,14 @@
 title: Time Management
 description: Time Management Instaread Original
 published: true
-date: 2020-04-14T14:25:16.207Z
+date: 2020-04-14T14:28:29.164Z
 tags: 
 ---
 
+# Time Management Instaread Original
+
 Instaread Short Cuts bring you up to speed on the latest research, analysis, and commentary on today’s hottest topics. In this Short Cut, we consider the process of time management, and explore how highly successful people learn to allot their time and energy to their highest priorities. Would you like to get more done while simultaneously finding more time for rest and relaxation? Find out more in this Instaread Original.
+
 When did you learn the value of your time? During college? After landing your first job? Or was it something you learned growing up? 
 
 At 15 years old, future Telemundo president Nely Galán was already beginning to understand the value of self-motivation when it comes to maintaining a productive schedule. As author Daymond John explains in his 2018 book, Rise and Grind, the precocious Cuban teenager had been offered a guest editor position at Seventeen Magazine after she was pushed to graduate early from her Catholic high school for writing an exposé about a teacher who had falsely accused her of plagiarism. The teacher later told Galán that her writing was on par with Ernest Hemingway’s The Old Man and the Sea (1952), something the teacher didn’t believe Galán capable of reproducing. Luckily, Seventeen believed in the young writer. Her new position was unpaid, but it allowed Galán to get vital experience she later used to begin her career on television. [1] 
@@ -80,3 +83,32 @@ As with all skills, learning time management is not an instantaneous process. Ho
 4. Balance work with routine rest. Aim to disconnect fully with whatever task is not immediately at hand. When at the office, focus on work. At home, find some ritual that can help you put your profession aside in favor of personal pursuits. Take regular breaks during the workday to refresh energy and focus. 
 
 Implementing new rituals and evaluating daily actions may require significant investment at first, both in terms of time and energy. Eventually, however, the process of managing time and balancing professional goals with personal pursuits will become second nature. By learning effective time management, anyone can achieve a fuller, more satisfying life, one in which intentional action directly decreases wasted effort and time.
+
+# References
+
+1. John, Daymond, and Daniel Paisner. Rise and Grind: Outperform, Outwork, and Outhustle Your Way to a More Successful and Rewarding Life. New York: Currency, 2018. Nely Galán.
+2. Ibid.
+3. Ibid.
+4. King, Stephen. On Writing: A Memoir of the Craft. New York: Pocket Books, 2000. Pg. 270.
+5. Newport, Cal. Deep Work: Rules for Focused Success in a Distracted World. New York: Hachette Book Group, 2016. Chapter 1.
+6. Ibid.
+7. Pozen, Robert C. Extreme Productivity: Boost Your Results, Reduce Your Hours. New York: HarperCollins, 2012. Chapter 2.
+8. Ibid.
+9. Pozen. Chapter 3.
+10. Ibid.
+11. Pozen. Chapter 1.
+12. Pozen. Chapter 13.
+13. Pozen. Chapter 1.
+14. Ibid.
+15. Carroll, Ryder. The Bullet Journal Method: Track the Past, Order the Present, Design the Future. New York: Portfolio/Penguin, 2018. Chapter: The Daily Log.
+16. Carroll. Chapter: Reflection.
+17. Pozen. Chapter 1.
+18. Loehr, Jim and Tony Schwartz. The Power of Full Engagement: Managing Energy, Not Time, Is the Key to High Performance and Personal Renewal. New York: Simon & Schuster, Inc., 2003. Chapter 10.
+19. Ibid.
+20. Ibid.
+21. Ibid.
+22. Loehr and Schwartz. Chapter 3.
+23. Loehr and Schwartz. Chapter 2.
+24. Loehr and Schwartz. Chapter 3.
+25. Ibid.
+26. Purbasari, Anisa. “I followed Benjamin Franklin’s Daily schedule for a week, and the most rewarding part was also the most difficult.” Business Insider, August 24, 2016. Accessed Feb. 12, 2020. https://www.businessinsider.com/benjamin-franklin-daily-routine-experiment-2016-8#-1
