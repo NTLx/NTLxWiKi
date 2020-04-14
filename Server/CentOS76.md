@@ -2,7 +2,7 @@
 title: CentOS 7.6
 description: CentOS 7.6 Deployment
 published: true
-date: 2020-04-14T07:28:54.458Z
+date: 2020-04-14T07:32:05.238Z
 tags: 
 ---
 
@@ -683,7 +683,7 @@ cpan -i YAML::Any
 cpan -i Date::Manip
 cpan -i Math::BigFloat
 cpan -i Math::Complex
-cpan -i utf8::all
+#cpan -i utf8::all
 cpan -i List::Util
 cpan -i Spreadsheet::ParseXLSX
 cpan -i Excel::Writer::XLSX
@@ -704,7 +704,7 @@ cpanm -n YAML::Any
 cpanm -n Date::Manip
 cpanm -n Math::BigFloat
 cpanm -n Math::Complex
-cpanm -n utf8::all
+#cpanm -n utf8::all
 cpanm -n List::Util
 cpanm -n Spreadsheet::ParseXLSX
 cpanm -n Excel::Writer::XLSX
