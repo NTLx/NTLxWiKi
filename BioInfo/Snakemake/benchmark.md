@@ -2,8 +2,8 @@
 title: Snakemake benchmark summarizing
 description: With a simple perl script
 published: true
-date: 2020-04-15T02:05:29.721Z
-tags: 
+date: 2020-04-15T02:07:17.681Z
+tags: script, tips, snakemake, bioinfo
 ---
 
 # Usage
