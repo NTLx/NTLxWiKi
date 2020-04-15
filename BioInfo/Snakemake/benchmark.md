@@ -2,15 +2,21 @@
 title: Snakemake benchmark summarizing
 description: With a simple perl script
 published: true
-date: 2020-04-15T02:07:17.681Z
+date: 2020-04-15T02:23:48.160Z
 tags: script, tips, snakemake, bioinfo
 ---
 
 # Usage
 
 ```bash
+❯ workflow/scripts/sum_benchmark.pl benchmark/01.QC
+Finding file(s) named *.benchmark under benchmark/01.QC and summarizing...
+Total Execution time: 02 hours 38 minutes 11 seconds
+Total io_in: 182.58G, Total io_out: 43.28G, Total io: 225.86G
 ❯ workflow/scripts/sum_benchmark.pl
+Finding file(s) named *.benchmark under current workdir and summarizing...
 Total Execution time: 10 hours 04 minutes 44 seconds
+Total io_in: 315.35G, Total io_out: 178.44G, Total io: 493.80G
 ```
 
 > This script will find file(s) which name match `*.benchmark` for time summarize.
@@ -22,8 +28,14 @@ Total Execution time: 10 hours 04 minutes 44 seconds
 use strict;
 use warnings;
 
-my $total_sec;
-my $files=`find . -name "*.benchmark"`;
+my $path=$ARGV[0];
+$path||=".";
+
+if (!$ARGV[0]) { print "Finding file(s) named *.benchmark under current workdir and summarizing...\n"; }
+else { print "Finding file(s) named *.benchmark under $path and summarizing...\n"; }
+
+my ($total_sec,$io_in,$io_out)=(0,0,0);
+my $files=`find $path -name "*.benchmark"`;
 chomp($files);
 # print "$files\n";
 my @lines=split(/\n/,$files);
@@ -33,9 +45,29 @@ foreach my $file (@lines) {
 		if ($_ !~ /^s/) {
 			my @arr=split/\t/;
 			$total_sec+=$arr[0];
+			$io_in+=$arr[6];
+			$io_out+=$arr[7];
 		}
 	}
 	close IN;
 }
+my $total_io=$io_in+$io_out;
+$io_in=&unit($io_in);
+$io_out=&unit($io_out);
+$total_io=&unit($total_io);
 printf ("Total Execution time: %02d hours %02d minutes %02d seconds\n",(gmtime($total_sec))[2,1,0]);
+print "Total io_in: $io_in, Total io_out: $io_out, Total io: $total_io\n";
+
+sub unit {
+	my $input=shift;
+	my $value;
+	if($input > 1024000 ) {
+		$value=sprintf("%.2f",($input/1024000) )."T";
+	} elsif ($input > 1024 ) { 
+		$value=sprintf("%.2f",($input/1024) )."G";
+	} else { 
+		$value=sprintf("%.2f",$input)."M";
+	}
+	return($value);
+}
 ```
