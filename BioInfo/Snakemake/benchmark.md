@@ -2,24 +2,29 @@
 title: Snakemake benchmark summarizing
 description: With a simple perl script
 published: true
-date: 2020-04-15T02:25:22.139Z
+date: 2020-04-15T02:30:19.471Z
 tags: script, tips, snakemake, bioinfo
 ---
 
 # Usage
 
 ```bash
-❯ workflow/scripts/sum_benchmark.pl
-Finding file(s) named "*.benchmark" under current workdir and summarizing...
-Total Execution time: 10 hours 04 minutes 44 seconds
-Total io_in: 315.35G, Total io_out: 178.44G, Total io: 493.80G
 ❯ workflow/scripts/sum_benchmark.pl benchmark/01.QC
 Finding file(s) named "*.benchmark" under benchmark/01.QC and summarizing...
 Total Execution time: 02 hours 38 minutes 11 seconds
 Total io_in: 182.58G, Total io_out: 43.28G, Total io: 225.86G
+Max_rss: 2.09G
+❯ workflow/scripts/sum_benchmark.pl
+Finding file(s) named "*.benchmark" under current workdir and summarizing...
+Total Execution time: 10 hours 04 minutes 44 seconds
+Total io_in: 315.35G, Total io_out: 178.44G, Total io: 493.80G
+Max_rss: 21.00G
 ```
 
-> This script will find file(s) which name match `*.benchmark` for time summarize.
+> This script will find file(s) which name match `*.benchmark` for summarize:
+> 1. Sum time
+> 2. Sum I/O
+> 3. Find Max memory consumption
 
 # Source
 
@@ -34,10 +39,9 @@ $path||=".";
 if (!$ARGV[0]) { print "Finding file(s) named \"*.benchmark\" under current workdir and summarizing...\n"; }
 else { print "Finding file(s) named \"*.benchmark\" under $path and summarizing...\n"; }
 
-my ($total_sec,$io_in,$io_out)=(0,0,0);
+my ($total_sec,$io_in,$io_out,$max_rss)=(0,0,0,0);
 my $files=`find $path -name "*.benchmark"`;
 chomp($files);
-# print "$files\n";
 my @lines=split(/\n/,$files);
 foreach my $file (@lines) {
 	open(IN,$file);
@@ -47,16 +51,21 @@ foreach my $file (@lines) {
 			$total_sec+=$arr[0];
 			$io_in+=$arr[6];
 			$io_out+=$arr[7];
+			if ($arr[2] > $max_rss) { $max_rss=$arr[2]; }
 		}
 	}
 	close IN;
 }
+
 my $total_io=$io_in+$io_out;
 $io_in=&unit($io_in);
 $io_out=&unit($io_out);
 $total_io=&unit($total_io);
+$max_rss=&unit($max_rss);
+
 printf ("Total Execution time: %02d hours %02d minutes %02d seconds\n",(gmtime($total_sec))[2,1,0]);
 print "Total io_in: $io_in, Total io_out: $io_out, Total io: $total_io\n";
+print "Max_rss: $max_rss\n";
 
 sub unit {
 	my $input=shift;
