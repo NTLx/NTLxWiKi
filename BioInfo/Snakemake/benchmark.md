@@ -2,7 +2,7 @@
 title: Snakemake benchmark summarizing
 description: With a simple perl script
 published: true
-date: 2020-04-15T03:07:51.464Z
+date: 2020-04-15T03:12:18.087Z
 tags: script, tips, snakemake, bioinfo
 ---
 
@@ -53,10 +53,12 @@ foreach my $file (@lines) {
 	while (<IN>) {
 		if ($_ !~ /^s/) {
 			my @arr=split/\t/;
-			$total_sec+=$arr[0];
-			$io_in+=$arr[6];
-			$io_out+=$arr[7];
-			if ($arr[2] > $max_rss) { $max_rss=$arr[2]; }
+			if ($arr[0] =~ /[0-9]/) { $total_sec+=$arr[0]; }
+			if ($arr[6] =~ /[0-9]/) { $io_in+=$arr[6]; }
+			if ($arr[7] =~ /[0-9]/) { $io_out+=$arr[7]; }
+			if ($arr[2] =~ /[0-9]/) {
+				if ($arr[2] > $max_rss) { $max_rss=$arr[2]; }
+			}
 		}
 	}
 	close IN;
