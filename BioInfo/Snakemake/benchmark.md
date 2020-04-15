@@ -2,11 +2,18 @@
 title: Snakemake benchmark summarizing
 description: With a simple perl script
 published: true
-date: 2020-04-15T02:30:19.471Z
+date: 2020-04-15T02:34:28.338Z
 tags: script, tips, snakemake, bioinfo
 ---
 
 # Usage
+
+This script will find file(s) which name match `*.benchmark` for summarize:
+1. Sum time
+2. Sum I/O
+3. Find Max memory consumption
+
+For example:
 
 ```bash
 ❯ workflow/scripts/sum_benchmark.pl benchmark/01.QC
@@ -21,10 +28,7 @@ Total io_in: 315.35G, Total io_out: 178.44G, Total io: 493.80G
 Max_rss: 21.00G
 ```
 
-> This script will find file(s) which name match `*.benchmark` for summarize:
-> 1. Sum time
-> 2. Sum I/O
-> 3. Find Max memory consumption
+> As you can see, the benchmark file of Snakemake was named `*.benchmark` by default (for me), so you can modify the script to fit your own workflow.
 
 # Source
 
