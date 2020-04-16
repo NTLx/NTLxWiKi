@@ -2,13 +2,13 @@
 title: Online Software
 description: 
 published: true
-date: 2020-04-16T07:53:55.285Z
+date: 2020-04-16T08:01:30.495Z
 tags: 
 ---
 
 # File
 
-- [Convertio（格式转换）](https://convertio.co/zh/)
+- [Convertio（File Format Converter）](https://convertio.co/zh/)
 
 ## PDF Tool
 
@@ -17,17 +17,17 @@ tags:
 
 # Text
 
-- [Mathcha 数学公式编辑](https://www.mathcha.io/)
+- [Online Mathematics Editor: Mathcha](https://www.mathcha.io/)
 
 # Pic
 
-- [Z4A 图床](https://www.z4a.net/)
-- [在线图片压缩、剪裁](https://www.yasuotu.com/)
+- [Online Gallery: Z4A](https://www.z4a.net/)
+- [Pic resize, cut, zip](https://www.yasuotu.com/)
 
 # Video
 
-- [酷播云（视频云）](http://my.cuplayer.com/login)
+- [Video Cloud: CuPlayer](http://my.cuplayer.com/login)
 
-# Sys
+# Other
 
-- [在线录屏工具](https://www.apowersoft.cn/free-online-screen-recorder)
+- [Screen Shot, Screen Record, Audio Record, Audio Edit&Convert, Video Convert: Apowersoft](https://www.apowersoft.cn/)
