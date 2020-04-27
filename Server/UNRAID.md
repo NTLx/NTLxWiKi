@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-10T05:22:57.387Z
+date: 2020-04-27T03:12:07.964Z
 tags: 
 ---
 
@@ -205,6 +205,13 @@ docker run -d --name='postgresql' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_O
 
 ```bash
 docker run -d --name='wikijs' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'DB_TYPE'='postgres' -e 'DB_HOST'='192.168.0.100' -e 'DB_PORT'='54321' -e 'DB_USER'='postgres' -e 'DB_PASS'='password' -e 'DB_NAME'='postgres' -p '3000:3000/tcp' 'requarks/wiki:2'
+```
+### ElasticSearch
+
+![icon](https://d1q6f0aelx0por.cloudfront.net/product-logos/library-elasticsearch-logo.png)
+
+```bash
+docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'discovery.type'='single-node' -e 'ES_JAVA_OPTS'='-Xms=256m -Xms=256m' -p '9300:9300/tcp' -p '9200:9200/tcp' -p '9200:9200/udp' -p '9300:9300/udp' 'elasticsearch:7.6.2'
 ```
 
 ## MatterWiKi
