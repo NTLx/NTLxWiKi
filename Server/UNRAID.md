@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-27T03:15:15.693Z
+date: 2020-04-27T06:53:30.532Z
 tags: 
 ---
 
@@ -213,6 +213,8 @@ docker run -d --name='wikijs' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="U
 ```bash
 docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'discovery.type'='single-node' -p '9300:9300/tcp' -p '9200:9200/tcp' -p '9200:9200/udp' -p '9300:9300/udp' 'elasticsearch:7.6.2'
 ```
+
+> Chinese word cut plugin: [es-ik](https://github.com/medcl/elasticsearch-analysis-ik)
 
 ## MatterWiKi
 
