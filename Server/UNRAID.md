@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-27T03:12:07.964Z
+date: 2020-04-27T03:15:15.693Z
 tags: 
 ---
 
@@ -211,7 +211,7 @@ docker run -d --name='wikijs' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="U
 ![icon](https://d1q6f0aelx0por.cloudfront.net/product-logos/library-elasticsearch-logo.png)
 
 ```bash
-docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'discovery.type'='single-node' -e 'ES_JAVA_OPTS'='-Xms=256m -Xms=256m' -p '9300:9300/tcp' -p '9200:9200/tcp' -p '9200:9200/udp' -p '9300:9300/udp' 'elasticsearch:7.6.2'
+docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'discovery.type'='single-node' -p '9300:9300/tcp' -p '9200:9200/tcp' -p '9200:9200/udp' -p '9300:9300/udp' 'elasticsearch:7.6.2'
 ```
 
 ## MatterWiKi
