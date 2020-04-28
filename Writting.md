@@ -2,7 +2,7 @@
 title: About Writting
 description: 
 published: true
-date: 2020-04-28T01:04:28.212Z
+date: 2020-04-28T01:37:00.814Z
 tags: 
 ---
 
@@ -12,7 +12,7 @@ tags:
 
 - [献给写作者的 Markdown 新手指南](https://www.jianshu.com/p/q81RER)
 
-## LaTex
+## LaTeX
 
 - [110分钟了解LaTeX2ε](http://dsm.cm.com:7777/d/f/544161148235200185)
 - [latex123（大家来学LaTeX）](http://dsm.cm.com:7777/d/f/544161700862015618)
