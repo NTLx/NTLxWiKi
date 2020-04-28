@@ -2,7 +2,7 @@
 title: About Writting
 description: 
 published: true
-date: 2020-04-28T01:37:00.814Z
+date: 2020-04-28T08:04:58.623Z
 tags: 
 ---
 
@@ -27,3 +27,7 @@ tags:
 - [中文文案排版指北](https://github.com/sparanoid/chinese-copywriting-guidelines)
 - [技术文档写作规范](https://www.jianshu.com/p/3b638180e42c)
 - [Google documentation guide](https://github.com/google/styleguide/tree/ab48617e00be9d111804bd3715dd7b5f5732c9a3/docguide)
+
+# Automation
+
+- [Microsoft Editor vs. Grammarly](https://sspai.com/post/60185)
