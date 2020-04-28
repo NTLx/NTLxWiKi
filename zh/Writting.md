@@ -2,7 +2,7 @@
 title: 技术文档
 description: 
 published: true
-date: 2020-04-28T01:03:13.132Z
+date: 2020-04-28T01:04:47.245Z
 tags: 
 ---
 
@@ -19,8 +19,8 @@ tags:
 
 # 文本编辑软件
 
-- [VS Code 文本编辑器使用指南（上）](https://sspai.com/post/60116)
-- [VS Code 文本编辑器使用指南（下）](https://sspai.com/post/60117)
+- [VS Code 文本编辑器使用指南（基础篇）](https://sspai.com/post/60116)
+- [VS Code 文本编辑器使用指南（进阶篇）](https://sspai.com/post/60117)
 
 # 写作规范
 
