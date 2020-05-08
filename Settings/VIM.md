@@ -2,7 +2,7 @@
 title: VIM
 description: my settings for vim
 published: true
-date: 2020-05-08T02:05:24.123Z
+date: 2020-05-08T13:38:56.531Z
 tags: 
 ---
 
@@ -23,4 +23,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 call vundle#end()            " required
 filetype plugin indent on    " required
+set ruler
+set nu
+set backspace=2
+set mouse=a
+Plugin 'wakatime/vim-wakatime'
+Plugin 'editorconfig/editorconfig-vim'
 ```
