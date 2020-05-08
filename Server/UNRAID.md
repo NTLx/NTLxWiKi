@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-05-08T14:17:38.240Z
+date: 2020-05-08T14:21:55.944Z
 tags: 
 ---
 
@@ -215,6 +215,14 @@ docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOS
 ```
 
 > Chinese word cut plugin: [es-ik](https://github.com/medcl/elasticsearch-analysis-ik)
+
+## NextCloud
+
+> Using PostgreSQL deployed along with wikijs
+
+```bash
+docker run -d --name='NextCloud' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'POSTGRES_DB'='nextcloud' -e 'POSTGRES_USER'='postgres' -e 'POSTGRES_PASSWORD'='password' -e 'POSTGRES_HOST'='192.168.0.100'  -e 'NEXTCLOUD_TRUSTED_DOMAINS'='lx.ntlx.xyz:82' -e 'NEXTCLOUD_TRUSTED_DOMAINS'='192.168.0.100:82' -p '82:80/tcp' -p '82:80/udp' -v '/mnt/disk1/appdata/NextCloud':'/var/www/html/':'rw' 'nextcloud'
+```
 
 ## MatterWiKi
 
