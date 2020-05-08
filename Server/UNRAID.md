@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-04-27T06:53:30.532Z
+date: 2020-05-08T14:17:38.240Z
 tags: 
 ---
 
@@ -196,7 +196,7 @@ docker run -d --name='WizNote' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="
 ![icon](http://img.52z.com/upload/info/20180919/201809191722011146.jpg)
 
 ```bash
-docker run -d --name='postgresql' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'POSTGRES_PASSWORD'='password' -p '54321:5432/tcp' -v '/mnt/disk1/appdata/wikijs/postgresql':'/var/lib/postgresql/data':'rw' 'postgres'
+docker run -d --name='postgresql' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'POSTGRES_PASSWORD'='password' -p '5432:5432/tcp' -v '/mnt/disk1/appdata/wikijs/postgresql':'/var/lib/postgresql/data':'rw' 'postgres'
 ```
 
 ### wikijs
@@ -204,7 +204,7 @@ docker run -d --name='postgresql' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_O
 ![icon](https://wiki.js.org/img/logo.fc80554c.svg)
 
 ```bash
-docker run -d --name='wikijs' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'DB_TYPE'='postgres' -e 'DB_HOST'='192.168.0.100' -e 'DB_PORT'='54321' -e 'DB_USER'='postgres' -e 'DB_PASS'='password' -e 'DB_NAME'='postgres' -p '3000:3000/tcp' 'requarks/wiki:2'
+docker run -d --name='wikijs' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'DB_TYPE'='postgres' -e 'DB_HOST'='192.168.0.100' -e 'DB_PORT'='5432' -e 'DB_USER'='postgres' -e 'DB_PASS'='password' -e 'DB_NAME'='postgres' -p '3000:3000/tcp' 'requarks/wiki:beta'
 ```
 ### ElasticSearch
 
