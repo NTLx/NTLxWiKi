@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-05-08T14:21:55.944Z
+date: 2020-05-08T15:12:50.678Z
 tags: 
 ---
 
@@ -217,6 +217,8 @@ docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOS
 > Chinese word cut plugin: [es-ik](https://github.com/medcl/elasticsearch-analysis-ik)
 
 ## NextCloud
+
+![icon](https://raw.githubusercontent.com/docker-library/docs/eabcf59e64b4395e681a7f7a9773bd213c9f3678/nextcloud/logo.svg)
 
 > Using PostgreSQL deployed along with wikijs
 
