@@ -2,7 +2,7 @@
 title: VIM
 description: my settings for vim
 published: true
-date: 2020-05-08T13:38:56.531Z
+date: 2020-05-08T13:40:20.164Z
 tags: 
 ---
 
@@ -29,4 +29,10 @@ set backspace=2
 set mouse=a
 Plugin 'wakatime/vim-wakatime'
 Plugin 'editorconfig/editorconfig-vim'
+```
+
+install plugins:
+
+```bash
+vim +PluginInstall
 ```
