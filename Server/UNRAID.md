@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-05-08T15:12:50.678Z
+date: 2020-05-08T15:18:04.872Z
 tags: 
 ---
 
@@ -111,7 +111,7 @@ docker run -d --name='AirSonic' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS=
 
 ## lms
 
-![icon](http://img.aso.aizhan.com/icon/fe/b4/5e/feb45e8acd229ee3994be8fb8514a9ee.jpg)
+![icon](https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-9/60185006_2413632292213338_2693730404887691264_n.jpg?_nc_cat=109&_nc_sid=85a577&_nc_ohc=JstlpInGrZ0AX98RT0k&_nc_ht=scontent-lax3-1.xx&oh=5106927a381aef1ca199002dc0d50817&oe=5EDC613C)
 
 ```bash
 docker run -d --name='lms' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '5082:5082/tcp' -v '/mnt/disk1/appdata/lms':'/var/lms':'rw' -v '/mnt/disk1/Music':'/music':'ro' 'epoupon/lms'
@@ -301,7 +301,7 @@ docker run -d --name='netdata' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="
 
 ## Watchtower
 
-![icon](https://camo.githubusercontent.com/7edd4ae7ae04b30fd707f9f9713e9778040b39ad/68747470733a2f2f30783132622e636f6d2f7761746368746f7765722d6c6f676f2e706e67)
+![icon](https://www.brandcrowd.com/gallery/brands/pictures/picture15638972102837.jpg)
 
 > Docker container auto update.
 
