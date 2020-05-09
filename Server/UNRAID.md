@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-05-08T15:18:04.872Z
+date: 2020-05-09T01:59:39.683Z
 tags: 
 ---
 
@@ -224,6 +224,16 @@ docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOS
 
 ```bash
 docker run -d --name='NextCloud' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'POSTGRES_DB'='nextcloud' -e 'POSTGRES_USER'='postgres' -e 'POSTGRES_PASSWORD'='password' -e 'POSTGRES_HOST'='192.168.0.100'  -e 'NEXTCLOUD_TRUSTED_DOMAINS'='lx.ntlx.xyz:82' -e 'NEXTCLOUD_TRUSTED_DOMAINS'='192.168.0.100:82' -p '82:80/tcp' -p '82:80/udp' -v '/mnt/disk1/appdata/NextCloud':'/var/www/html/':'rw' 'nextcloud'
+```
+
+## OnlyOffice
+
+![icon](https://avatars1.githubusercontent.com/u/1426033?s=200&v=4)
+
+> Could connect to NextCloud and provide online document editing
+
+```bash
+docker run -d --name='OnlyOffice' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '83:80/tcp' -p '83:80/udp' -v '/mnt/disk1/appdata/OnlyOffice/logs':'/var/log/onlyoffice':'rw' -v '/mnt/disk1/appdata/OnlyOffice/data':'/var/www/onlyoffice/Data':'rw' 'onlyoffice/documentserver'
 ```
 
 ## MatterWiKi
