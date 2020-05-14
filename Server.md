@@ -1,8 +1,8 @@
 ---
 title: Server
-description: Lot Kinds of OSs' Deployment, etc.
+description: Lots Kinds of OSs' Deployment, etc.
 published: true
-date: 2020-05-14T07:14:10.341Z
+date: 2020-05-14T07:14:33.819Z
 tags: 目录, index
 ---
 
