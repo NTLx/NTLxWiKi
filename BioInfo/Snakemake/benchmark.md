@@ -2,7 +2,7 @@
 title: Snakemake benchmark summarizing
 description: With a simple perl script
 published: true
-date: 2020-04-15T03:12:18.087Z
+date: 2020-05-14T07:11:45.763Z
 tags: script, tips, snakemake, bioinfo
 ---
 
@@ -71,8 +71,8 @@ $total_io=&unit($total_io);
 $max_rss=&unit($max_rss);
 
 if ($total_sec) {
-	printf ("Total Execution time: %02d hours %02d minutes %02d seconds\n",(gmtime($total_sec))[2,1,0]);
-	print "Total io_in: $io_in, Total io_out: $io_out, Total io: $total_io\n";
+	printf ("Total Executed Time: %02d hours %02d minutes %02d seconds\n",(gmtime($total_sec))[2,1,0]);
+	print "Total I/O In: $io_in, Total I/O Out: $io_out, Total I/O: $total_io\n";
 	print "Max_rss: $max_rss\n";
 }
 else { print "Maybe there was no \"*.benchmark\" file?\n"; }
@@ -80,9 +80,9 @@ else { print "Maybe there was no \"*.benchmark\" file?\n"; }
 sub unit {
 	my $input=shift;
 	my $value;
-	if($input > 1024000 ) {
+	if($input >= 1024000 ) {
 		$value=sprintf("%.2f",($input/1024000) )."T";
-	} elsif ($input > 1024 ) { 
+	} elsif ($input >= 1024 ) { 
 		$value=sprintf("%.2f",($input/1024) )."G";
 	} else { 
 		$value=sprintf("%.2f",$input)."M";
