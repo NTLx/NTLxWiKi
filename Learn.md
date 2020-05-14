@@ -1,8 +1,8 @@
 ---
-title: Learn
+title: Learning
 description: Learning Notes
 published: true
-date: 2020-04-14T14:24:17.727Z
+date: 2020-05-14T07:09:10.904Z
 tags: 
 ---
 
