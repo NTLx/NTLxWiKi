@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-05-09T01:59:39.683Z
+date: 2020-05-25T00:48:02.173Z
 tags: 
 ---
 
@@ -64,7 +64,7 @@ docker run -d --name='FileBrowser' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_
 ## Aria2 & NG
 
 ```bash
-docker run -d --name='aria2' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '6800:6800/tcp' -p '6800:6800/udp' -p '8888:80/tcp' -p '8888:80/udp' -v '/mnt/disk1/Download':'/data':'rw' 'wjg1101766085/aira2-ng:0.0.1'
+docker run -d --name='aria2' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '6800:6800/tcp' -p '6800:6800/udp' -p '8888:80/tcp' -p '8888:80/udp' -v '/mnt/disk1/Download':'/data':'rw' -v '/mnt/disk1/appdata/Aria2_NG_conf':'/config':'rw' 'wjg1101766085/aira2-ng:0.0.1'
 ```
 
 ## Aria2 & WebUI
