@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-05-25T00:48:02.173Z
+date: 2020-05-27T09:04:33.018Z
 tags: 
 ---
 
@@ -218,7 +218,7 @@ docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOS
 
 ## NextCloud
 
-![icon](https://raw.githubusercontent.com/docker-library/docs/eabcf59e64b4395e681a7f7a9773bd213c9f3678/nextcloud/logo.svg)
+![icon](http://icons.iconarchive.com/icons/papirus-team/papirus-apps/512/nextcloud-icon.png)
 
 > Using PostgreSQL deployed along with wikijs
 
