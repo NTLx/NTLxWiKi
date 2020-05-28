@@ -2,7 +2,7 @@
 title: Git
 description: 
 published: true
-date: 2020-05-28T14:23:52.878Z
+date: 2020-05-28T14:25:27.145Z
 tags: 
 ---
 
@@ -58,4 +58,4 @@ git log --author="Author Name"
 
 # Tips
 
-GitHub上随便点开一个文件，把url的.com替换成.githistory.xyz有惊喜
+GitHub上随便点开一个文件，把url的.com替换成.githistory.xyz[有惊喜](https://twitter.com/i/status/1265839242145460224)
