@@ -2,7 +2,7 @@
 title: Git
 description: 
 published: true
-date: 2020-05-28T00:50:34.648Z
+date: 2020-05-28T14:23:52.878Z
 tags: 
 ---
 
@@ -55,3 +55,7 @@ fi
 ```bash
 git log --author="Author Name"
 ```
+
+# Tips
+
+GitHub上随便点开一个文件，把url的.com替换成.githistory.xyz有惊喜
