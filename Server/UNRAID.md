@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-06-18T06:31:03.358Z
+date: 2020-06-18T06:38:20.600Z
 tags: 
 editor: markdown
 ---
@@ -214,7 +214,6 @@ docker run -d --name='wikijs' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="U
 ```bash
 docker run -d --name='ElasticSearch' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e 'discovery.type'='single-node' -e 'ES_JAVA_OPTS'='-Xms=256m -Xms=256m' -p '9300:9300/tcp' -p '9200:9200/tcp' -p '9200:9200/udp' -p '9300:9300/udp' 'elasticsearch:7.7.1'
 docker exec -it ElasticSearch bash
-export http_proxy="http://public.cubicise.com:28888"; export https_proxy="http://public.cubicise.com:28888"; export ftp_proxy="http://public.cubicise.com:28888"
 ./bin/elasticsearch-plugin install https://github.com/medcl/elasticsearch-analysis-ik/releases/download/v7.7.1/elasticsearch-analysis-ik-7.7.1.zip
 docker restart ElasticSearch
 ```
