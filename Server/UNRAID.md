@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-06-18T06:58:26.121Z
+date: 2020-06-22T02:55:31.841Z
 tags: 
 editor: markdown
 ---
@@ -53,6 +53,22 @@ http://github.com/dlandon/unassigned.devices/raw/master/unassigned.devices.plg
 The Docker GUI in UNRAID was recommanded, but the Command Line was also convenient.
 
 > You can set `Web UI` like this format in UNRAID docker GUI: `http://[IP]:[PORT:8080]`
+
+## Open VPN
+
+```bash
+cd /mnt/disk1/appdata
+git clone https://github.com/kylemanna/docker-openvpn.git
+cd docker-openvpn/
+docker build -t myownvpn .
+cd ..
+mkdir vpn-data
+docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm myownvpn ovpn_genconfig -u udp://IP_ADDRESS:3333
+docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm -it myownvpn ovpn_initpki
+docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn -d -p 3333:1194/udp --cap-add=NET_ADMIN myownvpn
+docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm -it myownvpn easyrsa build-client-full lx nopass
+docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm myownvpn ovpn_getclient lx > lx.ovpn
+```
 
 ## FileBrowser
 
