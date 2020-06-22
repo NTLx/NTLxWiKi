@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-06-22T02:55:31.841Z
+date: 2020-06-22T02:56:52.143Z
 tags: 
 editor: markdown
 ---
@@ -63,7 +63,7 @@ cd docker-openvpn/
 docker build -t myownvpn .
 cd ..
 mkdir vpn-data
-docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm myownvpn ovpn_genconfig -u udp://IP_ADDRESS:3333
+#docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm myownvpn ovpn_genconfig -u udp://IP_ADDRESS:3333
 docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm -it myownvpn ovpn_initpki
 docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn -d -p 3333:1194/udp --cap-add=NET_ADMIN myownvpn
 docker run -v /mnt/disk1/appdata/vpn-data:/etc/openvpn --rm -it myownvpn easyrsa build-client-full lx nopass
