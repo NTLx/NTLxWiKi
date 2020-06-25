@@ -2,7 +2,7 @@
 title: UNRAID
 description: mess up with UNRAID
 published: true
-date: 2020-06-22T02:56:52.143Z
+date: 2020-06-25T02:27:47.756Z
 tags: 
 editor: markdown
 ---
@@ -254,6 +254,12 @@ docker run -d --name='NextCloud' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS
 
 ```bash
 docker run -d --name='OnlyOffice' --net='bridge' -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -p '83:80/tcp' -p '83:80/udp' -v '/mnt/disk1/appdata/OnlyOffice/logs':'/var/log/onlyoffice':'rw' -v '/mnt/disk1/appdata/OnlyOffice/data':'/var/www/onlyoffice/Data':'rw' 'onlyoffice/documentserver'
+```
+
+## Wallabag
+
+```bash
+docker run --name wallabag -d --link postgresql:postgresql -e TZ="Asia/Shanghai" -e HOST_OS="Unraid" -e "POSTGRES_PASSWORD=password" -e "POSTGRES_USER=postgres" -e "SYMFONY__ENV__DATABASE_DRIVER=pdo_pgsql" -e 'SYMFONY__ENV__DATABASE_DRIVER_CLASS=Wallabag\CoreBundle\Doctrine\DBAL\Driver\CustomPostgreSQLDriver' -e "SYMFONY__ENV__DATABASE_HOST=postgresql" -e "SYMFONY__ENV__DATABASE_PORT=5432" -e "SYMFONY__ENV__DATABASE_NAME=wallabag" -e "SYMFONY__ENV__DATABASE_USER=NTLx" -e "SYMFONY__ENV__DATABASE_PASSWORD=password" -p 20000:80 wallabag/wallabag
 ```
 
 ## MatterWiKi
